@@ -1,2 +1,94 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <%= image_tag("logo.png") %>
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <!-- Notification link-->
+    <a href="" class="navbar-wagon-item navbar-wagon-link">
+      <div class="badge-container">
+        <i class="fa fa-envelope-o"></i>
+        <div class="badge badge-blue">3</div>
+      </div>
+    </a>
+
+    <!-- Profile picture and dropdown -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="http://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <!-- Dropdown appearing on mobile only -->
+    <div class="navbar-wagon-item hidden-md hidden-lg">
+      <div class="dropdown">
+        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Some mobile link</a></li>
+          <li><a href="#">Other one</a></li>
+          <li><a href="#">Other one</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <div class="card">
+        <div class="card-category">NETFLIX</div>
+        <div class="card-description">
+          <h2>Project title</h2>
+        </div>
+          <%= image_tag "hugues.jpg", class: "card-user avatar" %>
+          <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="card">
+        <div class="card-category">LE WAGON</div>
+        <div class="card-description">
+          <h2>Project title</h2>
+        </div>
+        <%= image_tag "quentin.jpg", class: "card-user avatar" %>
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="card">
+        <div class="card-category">NETFLIX</div>
+        <div class="card-description">
+          <h2>Project title</h2>
+        </div>
+          <%= image_tag "maxime.jpg", class: "card-user avatar" %>
+          <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="card-add">
+        <%= image_tag "plus.svg", class: "card-plus" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+      <h4>Our buttons</h4>
+      <br>
+      <br>
+      <a href="#" class="btn-orange">Write a story</a>
+      <a href="#" class="btn-transparent">Start now</a>
+      <a href="#" class="btn-normal">Submit</a>
+</div>
+
+
